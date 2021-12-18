@@ -14,7 +14,8 @@ module.exports = {
     extends: [
       // use the recommended rule set for both plain javascript and vue
       "eslint:recommended",
-      "plugin:vue/recommended"
+      "plugin:vue/recommended",
+      "@vue/prettier"
     ],
     rules: {
       // we should always disable console logs and debugging in production
