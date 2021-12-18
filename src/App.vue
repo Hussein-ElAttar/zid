@@ -17,9 +17,15 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
+
+// TODO: add this to some kind of config
+@import url("https://fonts.googleapis.com/css2?family=Cairo"); 
+
 #app {
+  width: 1426px;
   text-align: center;
+  margin: auto;
 }
 
 </style>
