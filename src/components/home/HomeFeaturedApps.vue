@@ -28,7 +28,7 @@
 import ReviewCard from "@/components/ui/ReviewCard";
 
 export default {
-  name: "FeaturedApps",
+  name: "HomeFeaturedApps",
   components: { ReviewCard },
   props: {},
 };
@@ -57,7 +57,7 @@ export default {
 }
 .apps {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 40px 82px 105px 40px;
 }
 </style>
