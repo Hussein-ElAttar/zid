@@ -1,5 +1,10 @@
 <template>
-  <div id="review-card">
+  <div class="review-card">
+    <!-- Avatar -->
+    <div class="card-avatar">
+      <img src="@/assets/media/review-avatar-placeholder.png" />
+    </div>
+
     <div class="card-content">
       <!-- title & stars -->
       <div class="title-stars-container">
@@ -20,11 +25,6 @@
         {{ comment }}
       </div>
     </div>
-
-    <!-- Avatar -->
-    <div class="card-avatar">
-      <img src="@/assets/media/review-avatar-placeholder.png" />
-    </div>
   </div>
 </template>
 
@@ -41,12 +41,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#review-card {
-  width: 295px;
-  height: 170px;
+@media (min-width: 991px) {
+  .review-card {
+    width: 295px;
+    height: 170px;
+  }
+}
+.review-card {
   border-radius: 10px;
   background-color: #f7f7f7;
   display: flex;
+  flex-direction: row-reverse;
   padding-top: 30px;
   padding-left: 22px;
   text-align: end;
@@ -68,7 +73,7 @@ export default {
 
   .title-stars-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: row-reverse;
     font-family: Cairo;
     font-size: 10px;

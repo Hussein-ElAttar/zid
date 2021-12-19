@@ -38,6 +38,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 991px) {
+  #animator {
+    width: fit-content;
+    position: relative;
+    .animation{
+      max-width: 95%;
+      height: auto;
+    }
+    .circle {
+      position: absolute;
+      height: 183px;
+      bottom: -50px;
+      right: -50px;
+      z-index: -1;
+    }
+    .dot-pattern {
+      position: absolute;
+      width: 78px;
+      height: 85px;
+      top: -20px;
+      left: -25px;
+      z-index: -1;
+    }
+  }
+}
 @media (min-width: 992px) {
   #animator {
     width: fit-content;
