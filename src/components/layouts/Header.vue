@@ -52,7 +52,7 @@ nav {
 }
 @media (min-width: 992px) {
   .navbar-nav {
-    justify-content: end;
+    justify-content: flex-start;
     flex-direction: row-reverse;
   }
 }

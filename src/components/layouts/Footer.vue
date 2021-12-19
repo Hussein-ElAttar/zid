@@ -64,7 +64,7 @@ export default {
   .icon-container {
     height: 100%;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
   }
 
   .action-icon {
