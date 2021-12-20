@@ -1,5 +1,5 @@
 <template>
-  <div id="animator" class="mx-auto">
+  <div id="media-viewer" class="mx-auto">
     <img class="dot-pattern" src="@/assets/media/dot-pattern.png" />
     <img
       class="animation"
@@ -38,11 +38,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (max-width: 991px) {
-  #animator {
+@media (max-width: $breakpoint-lg-down) {
+  #media-viewer {
     width: fit-content;
     position: relative;
-    .animation{
+    .animation {
       max-width: 95%;
       height: auto;
     }
@@ -63,8 +63,8 @@ export default {
     }
   }
 }
-@media (min-width: 992px) {
-  #animator {
+@media (min-width: $breakpoint-lg-up) {
+  #media-viewer {
     width: fit-content;
     position: relative;
     .circle {
@@ -79,7 +79,7 @@ export default {
       width: 176px;
       height: 191px;
       top: -45px;
-      left: -75px;
+      left: -85px;
       z-index: -1;
     }
   }

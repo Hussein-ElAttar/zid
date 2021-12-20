@@ -45,12 +45,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
   margin-bottom: 62px;
   padding-bottom: 0px;
+  font-family: Cairo;
 }
-@media (min-width: 992px) {
+@media (min-width: $breakpoint-lg-up) {
   .navbar-nav {
     justify-content: flex-start;
     flex-direction: row-reverse;
@@ -58,10 +59,6 @@ nav {
 }
 .nav-link {
   color: black;
-  font-family: Cairo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 30px;
 }
 
@@ -71,5 +68,10 @@ nav {
 
 .logo-image {
   margin-right: 145px;
+}
+@media (max-width: $breakpoint-lg-up) {
+  .logo-image {
+    margin-right: 25px;
+  }
 }
 </style>

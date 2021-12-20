@@ -21,21 +21,23 @@
         ></review-card>
       </div>
     </div>
+    <home-browse-btn class="browse-btn" text="جميع التطبيقات"></home-browse-btn>
   </div>
 </template>
 
 <script>
-import ReviewCard from "@/components/ui/ReviewCard";
+import ReviewCard from "@/components/_base/ReviewCard";
+import HomeBrowseBtn from "@/components/home//_base/HomeBrowseBtn";
 
 export default {
   name: "HomeFeaturedApps",
-  components: { ReviewCard },
+  components: { ReviewCard, HomeBrowseBtn },
   props: {},
 };
 </script>
 
-<style lang="scss">
-#featured-apps {
+<style lang="scss" scoped>
+.featured-apps {
   text-align: center;
 }
 .review-card {
@@ -44,20 +46,22 @@ export default {
 }
 .header {
   .title {
-    font-family: Cairo;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 5px;
   }
   .description {
-    font-family: Cairo;
     font-size: 14px;
   }
 }
 .apps {
   display: flex;
   justify-content: flex-end;
-  margin: 40px 82px 105px 40px;
+  margin: 40px 82px 40px 40px;
+}
+
+.browse-btn {
+  background: white;
 }
 </style>

@@ -28,25 +28,24 @@
           <p>أسعار تنافسية مع تجربة مجانية وباقات اشتراك متنوعة</p>
         </div>
       </div>
-      <button class="btn zid-btn-primary">
-        <div><img src="@/assets/media/down-arrow.gif" /> تصفح التطبيقات</div>
-      </button>
+      <home-browse-btn text="تصفح التطبيقات"></home-browse-btn>
     </div>
   </div>
 </template>
 
 <script>
-import MediaViewer from "@/components/ui/MediaViewer";
+import MediaViewer from "@/components/_base/MediaViewer";
+import HomeBrowseBtn from "@/components/home//_base/HomeBrowseBtn";
 
 export default {
   name: "HomeZidFeatures",
-  components: { MediaViewer },
+  components: { MediaViewer, HomeBrowseBtn },
   props: {},
 };
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 992px) {
+@media (min-width: $breakpoint-lg-up) {
   #zid-features {
     display: flex;
     padding-right: 107px;
@@ -54,7 +53,7 @@ export default {
     gap: 31px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: $breakpoint-lg-down) {
   #zid-features {
     display: flex;
     padding-right: 10px;
@@ -63,8 +62,8 @@ export default {
     justify-content: center;
   }
 }
+
 #features-description {
-  font-family: Cairo;
   text-align: end;
 
   .feature {
@@ -76,7 +75,6 @@ export default {
     }
   }
   .heading {
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
@@ -85,7 +83,6 @@ export default {
   }
   .description {
     margin-bottom: 34px;
-    font-weight: 400;
     text-align: end;
   }
   .feature-list {

@@ -8,16 +8,16 @@
         img-height="550px"
       />
     </div>
+    <home-zid-features></home-zid-features>
 
-    <div id="home-featured-apps">
+    <div class="home-featured-apps">
       <home-featured-apps></home-featured-apps>
     </div>
-    <home-zid-features></home-zid-features>
   </div>
 </template>
 
 <script>
-import MediaViewer from "@/components/ui/MediaViewer";
+import MediaViewer from "@/components/_base/MediaViewer";
 import HomeFeaturedApps from "@/components/home/HomeFeaturedApps.vue";
 import HomeZidFeatures from "@/components/home/HomeZidFeatures.vue";
 import HomeHeadline from "@/components/home/HomeHeadline.vue";
@@ -30,13 +30,14 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  text-align: center;
+  font-family: Cairo;
 }
+
 .header {
   margin-bottom: 250px;
 }
-// ====================================================================
-#home-featured-apps {
+
+.home-featured-apps {
   margin-top: 250px;
   margin-bottom: 120px;
 }

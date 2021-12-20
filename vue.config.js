@@ -12,7 +12,10 @@ module.exports = {
       // `scss` syntax requires an semicolon at the end of a statement, while `sass` syntax requires none
       // in that case, we can target the `scss` syntax separately using the `scss` option
       scss: {
-        additionalData: `@import "~@/assets/styles/_variables.scss";`,
+        additionalData: `
+        @import "~@/assets/styles/_variables.scss";
+        @import "~@/assets/styles/main.scss";
+        `,
       },
       // pass Less.js Options to less-loader
       less: {

@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 #footer {
   display: flex;
   justify-content: space-between;
@@ -55,33 +55,33 @@ export default {
   background-color: $zid-purple;
   text-align: center;
   height: 233px;
+}
 
-  .logo-image {
-    width: 250px;
-    height: auto;
-  }
+.logo-image {
+  width: 250px;
+  height: auto;
+}
 
-  .icon-container {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-  }
+.icon-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
 
-  .action-icon {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: $zid-yellow;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .social-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
+.action-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $zid-yellow;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 </style>

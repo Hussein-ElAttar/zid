@@ -41,12 +41,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 991px) {
+@media (min-width: $breakpoint-lg-up) {
   .review-card {
     width: 295px;
     height: 170px;
   }
 }
+
 .review-card {
   border-radius: 10px;
   background-color: #f7f7f7;
@@ -58,9 +59,6 @@ export default {
 }
 
 .author {
-  font-family: Cairo;
-  font-style: normal;
-  font-weight: normal;
   font-size: 10px;
   line-height: 24px;
   span {
@@ -73,24 +71,17 @@ export default {
 
   .title-stars-container {
     display: flex;
-    justify-content: flex-end;
     flex-direction: row-reverse;
-    font-family: Cairo;
     font-size: 10px;
 
     .title {
-      font-family: Cairo;
-      font-style: normal;
       font-weight: 600;
-      font-size: 16px;
       color: $zid-purple;
       margin-left: 21px;
     }
     .stars {
       display: flex;
       color: #45a787;
-      font-family: Cairo;
-      font-style: normal;
       font-weight: 600;
       font-size: 14px;
 
@@ -107,8 +98,6 @@ export default {
   }
 
   .comment {
-    font-family: Cairo;
-    font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 24px;
