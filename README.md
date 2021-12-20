@@ -1,4 +1,13 @@
-# zid
+## Live demo
+https://hussein-elattar.github.io/zid/
+
+## Resources
+
+https://vuejs.org/v2/guide
+
+https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components
+
+https://medium.com/swlh/deploy-vue-app-to-github-pages-2ada48d7397e
 
 ## Project setup
 ```
