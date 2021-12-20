@@ -20,6 +20,7 @@ export default {
 #header,
 #content {
   max-width: 1426px;
+  margin: auto;
 }
 
 #footer {

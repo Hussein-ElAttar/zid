@@ -61,6 +61,9 @@ export default {
     gap: 80px;
     justify-content: center;
   }
+  #features-description {
+    text-align: center !important;
+  }
 }
 
 #features-description {
